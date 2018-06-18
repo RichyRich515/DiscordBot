@@ -17,7 +17,7 @@ async def on_message(message):
 	if message.content.startswith("+ping"):
 		await client.send_message(message.channel, "Pong!")
 	elif message.content.startswith("+g"):
-		msg = "https://www.google.com/search?q=" + message.content[3:].replace(' ', "\%20")
+		msg = "https://www.google.com/search?q=" + message.content[3:].replace(' ', "%20")
 		await client.send_message(message.channel, msg)
 	elif message.content.startswith("+big"):
 		msg = " ".join(message.content[5:])
